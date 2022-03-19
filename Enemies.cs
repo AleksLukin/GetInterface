@@ -9,6 +9,7 @@ namespace GetInterface
     class Enemies:Movement
     {
         private int point { get; set; }
+        
         /// <summary>
         /// утки
         /// </summary>
@@ -16,30 +17,72 @@ namespace GetInterface
         {
             if (move==8)
             {
-                Console.WriteLine("Enemy is die");
+                Console.WriteLine("Duck is die");
+                point = 200;
             }
-            point = 200;
+            else if (move==5)
+            {
+                Console.WriteLine("Duck is die");
+                point = 200;
+            }
+            else
+            {
+                Console.WriteLine("Game Over!");
+            }
+            
         }
         /// <summary>
         /// утки с крыльями
         /// </summary>
         void DuckWithWings()
         {
-            point = 400;
+            if (move == 8)
+            {
+                Console.WriteLine("Duck with wings is die");
+                point = 400;
+            }
+            else if (move == 5)
+            {
+                Console.WriteLine("Duck with wings is die");
+                point = 200;
+            }
+            else
+            {
+                Console.WriteLine("Game Over!");
+            }
         }
         /// <summary>
         /// круглый враг
         /// </summary>
         void RoundEnemy()
         {
-            point = 100;
+            if (move == 8)
+            {
+                Console.WriteLine("Duck with wings is die");
+                point = 100;
+            }
+            else if (move == 5)
+            {
+                Console.WriteLine("Duck with wings is die");
+                point = 100;
+            }
+            else
+            {
+                Console.WriteLine("Game Over!");
+            }
         }
         /// <summary>
         /// основной босс
         /// </summary>
         void HeadBoss()
         {
-            point = 1000;
+            point = 100;
+            for (int i = 0; i <=10; i++)
+            {
+                Bounce();
+                point++;
+            }                  
+            Console.WriteLine("You`re winner!");
         }
     }
 }

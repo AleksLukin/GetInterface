@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace GetInterface
 {
     
-    class Trophy
+    class Trophy:Movement
     {
         private int point { get; set; }
         
@@ -17,6 +17,7 @@ namespace GetInterface
         void Mushroom()
         {
             point = 200;
+            
         }
         /// <summary>
         /// зонтичный гриб - спососбность стрелять

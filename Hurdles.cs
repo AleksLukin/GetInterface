@@ -8,19 +8,35 @@ namespace GetInterface
 {
     class Hurdles:Movement
     {
+        bool tube { get; set; }
+        bool abyss { get; set; }
         /// <summary>
         /// на пути - труба
         /// </summary>
-        void Tubes()
+        protected void Tubes()
         {
-            
+            if (!tube)
+            {
+                Bounce();
+            }
+            else
+            {
+                MoveForward();
+            }       
         }
         /// <summary>
         /// на пути - бездна
         /// </summary>
-        void Abyss()
+        protected void Abyss()
         {
-
+            if (!tube)
+            {
+                Bounce();
+            }
+            else
+            {
+                MoveForward();
+            }
         }
 
     }

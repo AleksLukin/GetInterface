@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace GetInterface
 {
-    class Movement
+     class Movement
     {
         public int move { get; set; }
         /// <summary>
         /// Появление героя
         /// </summary>
-        void Appearance()
+        protected void Appearance()
         {
-            Console.WriteLine("Марио появился!");
+            Console.WriteLine("Mario has appeared!");
         }
         /// <summary>
         /// Движение героя вперед - клавиша "6"
         /// </summary>
-        void MoveForward()
+        protected void MoveForward()
         {
             move = int.Parse(Console.ReadLine());
             if (move == 6)
@@ -32,7 +32,7 @@ namespace GetInterface
         /// <summary>
         /// Движение героя назад - клавиша "4"
         /// </summary>
-        void MoveBack()
+        protected void MoveBack()
         {
             move = int.Parse(Console.ReadLine());
             if (move == 6)
@@ -44,7 +44,7 @@ namespace GetInterface
         /// <summary>
         /// Прыжок героя - клавиша "8"
         /// </summary>
-        void Bounce()
+        protected void Bounce()
         {
             move = int.Parse(Console.ReadLine()); 
             if (move == 8)
@@ -55,7 +55,7 @@ namespace GetInterface
         /// <summary>
         /// Присел герой - клавиша "2"
         /// </summary>
-        void SitDown()
+        protected void SitDown()
         {
             move = int.Parse(Console.ReadLine());
             if (move == 2)
@@ -66,7 +66,7 @@ namespace GetInterface
         /// <summary>
         /// Стрельба герояс - клавиша "5"
         /// </summary>
-        void Shoot()
+        protected void Shoot()
         {
             move = int.Parse(Console.ReadLine());
             if (move == 5 )

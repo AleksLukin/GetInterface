@@ -15,7 +15,7 @@ namespace GetInterface
 
         static void Main(string[] args)
         {
-            
+
         }
     }
 
