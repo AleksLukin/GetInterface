@@ -28,8 +28,7 @@ namespace GetInterface
             else
             {
                 Console.WriteLine("Game Over!");
-            }
-            
+            }            
         }
         /// <summary>
         /// утки с крыльями
@@ -58,12 +57,12 @@ namespace GetInterface
         {
             if (move == 8)
             {
-                Console.WriteLine("Duck with wings is die");
+                Console.WriteLine("Enemy is die");
                 point = 100;
             }
             else if (move == 5)
             {
-                Console.WriteLine("Duck with wings is die");
+                Console.WriteLine("Enemy is die");
                 point = 100;
             }
             else
@@ -74,7 +73,7 @@ namespace GetInterface
         /// <summary>
         /// основной босс
         /// </summary>
-        void HeadBoss()
+        public void HeadBoss()
         {
             point = 100;
             for (int i = 0; i <=10; i++)

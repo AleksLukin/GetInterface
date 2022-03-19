@@ -15,7 +15,8 @@ namespace GetInterface
 
         static void Main(string[] args)
         {
-
+            Enemies enemies = new();
+            enemies.HeadBoss();
         }
     }
 

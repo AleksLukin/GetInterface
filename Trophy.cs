@@ -16,6 +16,7 @@ namespace GetInterface
         /// </summary>
         void Mushroom()
         {
+            Bounce();
             point = 200;
             
         }
@@ -24,6 +25,7 @@ namespace GetInterface
         /// </summary>
         void MushroomUmbrella()
         {
+            Bounce();
             point = 400;
         }
         /// <summary>
@@ -31,6 +33,7 @@ namespace GetInterface
         /// </summary>
         void MoneyPenny()
         {
+            Bounce();
             point = 100;
         }
     }
