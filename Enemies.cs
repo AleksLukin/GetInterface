@@ -10,6 +10,7 @@ namespace GetInterface
     {
         private int point { get; set; }
         
+
         /// <summary>
         /// утки
         /// </summary>
@@ -75,13 +76,13 @@ namespace GetInterface
         /// </summary>
         public void HeadBoss()
         {
-            point = 100;
+            point = 0;
             for (int i = 0; i <=10; i++)
             {
                 Bounce();
-                point++;
+                point+=100;
             }                  
-            Console.WriteLine("You`re winner!");
+            Console.WriteLine("You`re winner! You`ve {0} points",point);
         }
     }
 }

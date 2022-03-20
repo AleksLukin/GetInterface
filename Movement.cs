@@ -49,7 +49,7 @@ namespace GetInterface
             move = int.Parse(Console.ReadLine()); 
             if (move == 8)
             {
-                Console.WriteLine("Mario bouncing");
+                Console.WriteLine("Mario is bouncing");
             }
         }
         /// <summary>
